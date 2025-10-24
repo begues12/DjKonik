@@ -309,18 +309,6 @@
         });
       });
 
-      // Add hover effects to music cards
-      const musicCards = document.querySelectorAll('.music-card');
-      musicCards.forEach(card => {
-        card.addEventListener('mouseenter', function() {
-          this.style.transform = 'translateY(-10px) scale(1.02)';
-        });
-        
-        card.addEventListener('mouseleave', function() {
-          this.style.transform = 'translateY(0) scale(1)';
-        });
-      });
-
       // Parallax effect for background
       window.addEventListener('scroll', function() {
         const scrolled = window.pageYOffset;
@@ -331,18 +319,9 @@
         }
       });
     });
-
-    // Add glitch effect on hover for main title
-    const djName = document.querySelector('.dj-name');
-    if (djName) {
-      djName.addEventListener('mouseenter', function() {
-        this.style.animation = 'textGlow 0.1s ease-in-out infinite alternate';
-      });
-      
-      djName.addEventListener('mouseleave', function() {
-        this.style.animation = 'textGlow 3s ease-in-out infinite alternate';
-      });
-    }
   </script>
+  
+  <!-- Advanced Effects -->
+  <script src="effects.js"></script>
 
 </body></html>
